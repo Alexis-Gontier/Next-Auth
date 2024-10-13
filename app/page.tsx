@@ -28,18 +28,16 @@ export default function Home() {
             Bienvenue {session?.user?.name}
           </p>
         ) : (
-          <p className="text-xl text-center mb-4">Vous n'êtes pas connecté.</p>
+          <p className="text-xl text-center mb-4">Vous n&apos;êtes pas connecté.</p>
         )}
         <div className="flex items-center gap-2">
           {!session ? (
-            <>
-              <button
-                onClick={() => signIn("github")}
-                className="bg-gray-300 hover:bg-gray-400 rounded-md py-3 px-5 text-base font-medium"
-              >
-                Se connecter avec Github
-              </button>
-            </>
+            <button
+              onClick={() => signIn("github")}
+              className="bg-gray-300 hover:bg-gray-400 rounded-md py-3 px-5 text-base font-medium"
+            >
+              Se connecter avec Github
+            </button>
           ) : (
             <button
               onClick={() => signOut()}
