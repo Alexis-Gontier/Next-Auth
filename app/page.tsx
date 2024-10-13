@@ -28,7 +28,7 @@ export default function Home() {
             Bienvenue {session?.user?.name}
           </p>
         ) : (
-          <p className="text-xl text-center mb-4">Vous n&apos;êtes pas connecté.</p>
+          <p className="text-xl text-center mb-4">Vous n'êtes pas connecté.</p>
         )}
         <div className="flex items-center gap-2">
           {!session ? (
